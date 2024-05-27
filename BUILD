@@ -14,6 +14,12 @@ python_sources(
     ]
 )
 
+python_tests(
+    name = "tests",
+    sources = ["interpreter/**/*_test.py"],
+    resolve = "base",
+)
+
 poetry_requirements(
     name="poetry",   
     resolve="base",
